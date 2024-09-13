@@ -1,0 +1,23 @@
+{% extends "bases.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+  <h1>Register</h1>
+  <form action="/register" method="post">
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" required>
+    <br>
+    <input type="submit" value="Register" class="w3-button w3-cyan">
+  </form>
+  <p>Already have an account?
+</div>
+  <form action="login" method="get">
+        <input type="submit" value="Login" class="w3-button w3-green">
+  </form>
+
+{% endblock %}

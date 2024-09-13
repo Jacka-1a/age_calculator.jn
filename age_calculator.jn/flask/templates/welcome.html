@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<h1>Welcome</h1>
+<!--Welcome the user-->
+<!-- We will use the JINJA templating to display the username of the user that is logged in-->
+<h1>Welcome {{ user }}, you are {{ age }} years old</h1>
+<!--strong>Hello, World</strong-->
+  <!--  <input type="submit" value="Logout">-->
+<form action="calculator" method="get">
+        <input type="submit" value="calculator" class="w3-button w3-red">
+  </form>
+  <form action="login" method="get">
+        <input type="submit" value="Logout" class="w3-button w3-green">
+  </form>
+
+{% endblock %}
